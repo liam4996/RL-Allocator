@@ -97,28 +97,11 @@ bash eval_zeroshot.sh MODEL_DIR EVAL_LOG_DIR
 
 Notice, MODEL_DIR should be the output_model directory in previously saved model files.
 
-## Evaluation results
-Following the above evaluation steps, the MMLU results are
-|Model Name|MMLU|
-|----|----|
-|MobileLLM-350M → 125M|25.35|
-|MobileLLM-600M → 350M|32.25|
-|MobileLLM-1B → 600M|37.34|
 
-## Examples
-
-For detailed usage examples and tutorials, please refer to the [experiments](experiments/) in the repository.
 
 ## License
 
 Apache-2.0 license
 
-## Acknowledgments
-
-This research used the Delta advanced computing and data resource which is supported by the National Science Foundation (award OAC 2005572) and the State of Illinois. Delta is a joint effort of the University of Illinois Urbana-Champaign and its National Center for Supercomputing Applications.
-
-This research used both the DeltaAI advanced computing and data resource, which is supported by the National Science Foundation (award OAC 2320345) and the State of Illinois, and the Delta advanced computing and data resource which is supported by the National Science Foundation (award OAC 2005572) and the State of Illinois.. Delta and DeltaAI are joint efforts of the University of Illinois Urbana-Champaign and its National Center for Supercomputing Applications.
-
-This project is built on top of [LLM-Pruner](https://github.com/horseee/LLM-Pruner), an efficient pruning library for LLM. We thank the LLM-Pruner team for providing this foundation.
 
 
