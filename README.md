@@ -1,6 +1,9 @@
 # RL-Allocator&RL-Refine
 
-RL-Allocator is an RL-driven structured width-pruning allocator that replaces hand-crafted layer budgets with a policy optimizing a mixed reward over accuracy and deployment proxies (FLOPs/bytes/activations/KV), yielding hardware-aligned sparsity layouts under a fixed global budget.
+RL-Allocator is an RL-driven structured width-pruning allocator that replaces hand-crafted layer budgets with a policy optimizing a mixed reward over accuracy and deployment proxies (FLOPs/bytes/activations/KV)in this layer once forward, yielding hardware-aligned sparsity layouts under a fixed global budget.
+
+
+Peak Activations are the size of the "coexisting maximum activation tensor" (peak memory usage),KV-cache is the size of the Key/Value cache that needs to be saved during inference (the autoregressive model increases each time a new token is generated) 
 
 RL-Refine is a sum-preserving RL micro-adjustment that starts from Adapt-Pruner’s allocation and makes small, discrete transfers of heads/FFN blocks between layers, maintaining accuracy while nudging sparsity toward proxy-critical layers.
 
