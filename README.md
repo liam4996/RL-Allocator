@@ -1,3 +1,4 @@
+(I'm very sorry that due to the expression issues in my thesis writing, in fact, when I reproduced the LLM-Pruner, I used the Lora fine-tuning itself, while both the adaptpruner and my two methods were interleaved training of the adaptpruner itself)
 # RL-Allocator&RL-Refine
 
 RL-Allocator is an RL-driven structured width-pruning allocator that replaces hand-crafted layer budgets with a policy optimizing a mixed reward over accuracy and deployment proxies (FLOPs/bytes/activations/KV)in this layer once forward, yielding hardware-aligned sparsity layouts under a fixed global budget.
